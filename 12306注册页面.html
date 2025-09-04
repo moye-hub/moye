@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+		  <title>12306</title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+		  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+		<style>
+			#loginDiv{
+				width: 1200px;
+				height: 600px;
+				border: 1px solid red;
+				position: absolute;
+				top: 20%;
+				left: 20%;
+				background-color: white;
+			}
+			#h1{
+				background-color: #337ab7;
+				color: white;
+			}
+			#btn1{
+				border-radius: 5px;
+				background-color: orange;
+				color: white;
+				margin-top: 50px;
+			}
+		</style>
+		</head>
+		<body>
+		<div id="loginDiv">
+			<form action="">
+				<h6 id="h1">账户信息</h6>
+			  <div class="text-center">
+				<label for="email" class="form-label">用户名：&nbsp;&nbsp;&nbsp;</label>
+				<input type="email" class="form-lable" id="email" placeholder="用户名设置成功后不可修改" name="email" style="width: 200px;">
+			  </div>
+			  <div class="text-center">
+				<label for="pwd" class="form-label">登录密码：</label>
+				<input type="password" class="form-label" id="pwd" placeholder="6-20位字母、数字或符号" name="pswd" style="width: 200px;">
+			  </div>
+			  <div class="text-center">
+			  	<label for="pwds" class="form-label">确认密码：</label>
+			  	<input type="password" class="form-label" id="pwds" placeholder="再次输入您的密码" name="pswds" style="width: 200px;">
+			  </div>
+			<div class="text-center">
+				<label for="type" class="form-label">证件类型：</label>
+				<select style="width: 200px;">
+					<option>居民身份证</option>
+					<option>港澳居民居住证</option>
+					<option>台湾居民居住证</option>
+					<option>外国人永久居留身份证</option>
+					<option>外国护照</option>
+					<option>中国护照</option>
+					<option>港澳居民来往内地通行证</option>
+					<option>台湾居民来往大陆通行证</option>
+				</select>
+			</div>
+			<div class="text-center">
+				<label for="name" class="form-label">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</label>
+				<input type="name" class="form-lable" id="name" placeholder="请输入姓名" name="name" style="width: 200px;">
+			</div>
+			<div class="text-center">
+				<label for="number" class="form-label">证件号码：</label>
+				<input type="numbers" class="form-lable" id="number" placeholder="请输入您的证件号码" name="number" style="width: 200px;">
+			</div>
+			<div class="text-center">
+				<label for="type" class="form-label">优惠（待）类型：</label>
+				<select style="width: 155px;">
+					<option>成人</option>
+					<option>儿童</option>
+					<option>学生</option>
+					<option>残疾军人</option>
+				</select>
+			</div>
+			<div class="text-center" style="margin-top: 20px;">
+				<label for="email" class="form-label">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
+				<input type="email" class="form-lable" id="email" placeholder="用户名设置成功后不可修改" name="email" style="width: 200px;">
+			</div>
+			<div class="text-center">
+				<label for="type" class="form-label">手机号码：</label>
+				<select style="width: 100px;">
+					<option>+86 中国</option>
+					<option>+852 中国香港</option>
+					<option>+853 中国澳门</option>
+					<option>+886 中国台湾</option>
+				</select>
+				<input type="text" class="form-lable" style="width:100px"/>
+			</div>
+			<div class="col-auto" style="margin-top: 5px;margin-left: 450px;">
+				<input type="checkbox"/>我已阅读并同意遵守《中国铁路客户服务中心网站服务条款》 《隐私权政策》
+			</div>
+			<div class="text-center">
+				<button id="btn1">下一步</button>
+			</div>
+			</form>
+		</div>
+
+	</body>
+</html>
