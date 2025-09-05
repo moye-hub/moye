@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<img id="lamp" src="img/off.png" width="200px"/><br>
+		<button onclick="onlamp()" style="width: 100px;height: 50px">开灯</button>
+		<button onclick="offlamp()" style="width: 100px;height: 50px">关灯</button><br>
+		<img id="fan" src="img/stop.png" width="200px" onclick="onfan()"/><br>
+		<button onclick="onfan()" style="width: 100px;height: 50px">开风扇</button>
+		<button onclick="offfan()" style="width: 100px;height: 50px">关风扇</button>
+		<script>
+			let img = document.getElementById('lamp');
+			function onlamp(){
+					img.src = 'img/on.png';
+			}
+			function offlamp(){
+					img.src = 'img/off.png';
+			}
+			let img2 = document.getElementById('fan');
+			function onfan(){
+					img2.src = 'img/fanstart.gif';
+				}
+			function offfan(){
+					img2.src = 'img/stop.png';
+				}
+		</script>
+	</body>
+</html>
